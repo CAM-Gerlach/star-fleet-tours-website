@@ -21,8 +21,8 @@ https://opensource.org/licenses/MIT
     //
     // Otherwise, specify the absence of a missionOverride:
     const missionOverride = {
-        missionName: "SpaceX Falcon Heavy USSF-44 Launch",
-        launchAt: 1667310060, // the UNIX timestamp of the projected T-0 time
+        missionName: "Falcon Heavy USSF-52 X-37B",
+        launchAt: 1702300440, // the UNIX timestamp of the projected T-0 time
         limitTwoWeeks: true,
     };
     // const missionOverride = null;
