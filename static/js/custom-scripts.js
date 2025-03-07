@@ -21,8 +21,8 @@ https://opensource.org/licenses/MIT
     //
     // Otherwise, specify the absence of a missionOverride:
     const missionOverride = {
-        missionName: "SpaceX Falcon Heavy GOES-U",
-        launchAt: 1719350160, // the UNIX timestamp of the projected T-0 time
+        missionName: "SpaceX Starship Flight 8",
+        launchAt: 1741303800, // the UNIX timestamp of the projected T-0 time
         limitTwoWeeks: true,
     };
     // const missionOverride = null;
@@ -155,10 +155,21 @@ https://opensource.org/licenses/MIT
         }
     }
 
+    const URL1 = "aHR0cHM6Ly90aW55dXJsLFIXFIXmNvbS9zZnQtZ3JvdXAtMi1mamRza2ppb2Vlag";
+
+    function insert_urls() {
+        const url = atob(URL1.replace("FIXFIX", ""));
+        const toReplace = document.querySelectorAll("a[href*='INSERT_URL_1']");
+        toReplace.forEach((a) => {
+            a.href = url;
+        });
+    };
+
     // Document on load
     $(function(){
         styleStarGlyph();
         initializeLaunchCountdown();
+        insert_urls()
     });
 
 }());
